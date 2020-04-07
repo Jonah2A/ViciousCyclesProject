@@ -4,6 +4,33 @@ Date: 03/20/20
 */
 /*For all pages Header / Content/Page */
 
+
+
+/*Auto Resize Images Class */
+
+.VClogo_autosize{
+  height: auto;
+  width:25%;
+}
+
+
+/*Heading formatting for all Pages */
+
+.VChead {
+  text-align: center;
+  color:#010B5B;
+  font-size: 4em;
+}
+
+/*Body color class for all pages  */
+.bodystyle{
+  background-color:#EEEEEE;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
 .col-sm-4 {
   text-align: center;
   background-color: rgb(167, 182, 211);
@@ -18,6 +45,31 @@ Date: 03/20/20
   height: auto;
   min-width: 70%;
 }
+
+/* -- All anchor Links */
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: rgb(0, 9, 128);
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+/*--End all */
+
+
 /*Header*/
 .headerfloatleft { 
   float: left;
@@ -47,12 +99,23 @@ Date: 03/20/20
 
 
 /*Container */
+
+.container-content-wrap{
+
+  border: 0;
+  height: 0px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+  margin: 0 auto; 
+
+}
+
 .containerhr {
   border: 0;
   height: 1px;
   background: #333;
   background-image: linear-gradient(to right, #ccc, #333, #ccc);
-
+ 
 }
 
 /*Footer */
@@ -65,7 +128,6 @@ Date: 03/20/20
 .footer_vc{
    height:380px;
    width: 100%;
-   background-color: rgb(255, 255, 255);
  }
 
  .the3Ps {
@@ -73,9 +135,11 @@ Date: 03/20/20
     border: 0px;
     text-align: left;
     border-collapse: collapse;
-    padding: 2px;
-    color: black;
- 
+    padding: 0px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(74, 117, 173);
+    font-size: 20px;
+    border-radius: 50px;
 }
 .the3Ps th{
   border: 0px;
@@ -91,9 +155,13 @@ Date: 03/20/20
 }
 
 .the3Ps .btitles{
-  font-size: large;
+  font-size: small;
 }
-
+.the3Ps .btitles2{
+  font-size: xx-small;
+  width: 20;
+  height: 30;
+}
 
 
 /*tr .tfooter{
@@ -116,9 +184,7 @@ Date: 03/20/20
   border: 3px solid green;
   padding: 10px;
 }
-h3#VChead {
-  text-align: center;
-}
+
 .divdex {
   text-align: center;
   font-size: 28px;
@@ -155,7 +221,6 @@ h3#VChead {
 .ptable {
   font-family: arial, sans-serif;
   border-collapse: collapse;
-  border: darkblue;
   width: 100%;
   max-width: 100%;
   height: 190; 
@@ -175,7 +240,7 @@ th {
 
 /* Services CSS Styles */
 .divservice {
-  text-align: left;
+  text-align: left; 
 }
 .vc_textarea{
   
@@ -185,6 +250,35 @@ th {
   height: 55%;
   width: 40%;
 }
+.the3services {
+  width: 100%;
+  border: 0px;
+  text-align: left;
+  border-collapse: collapse;
+  padding: 2px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 206, 101);
+  font-size: 20px;
+  border-radius: 50px;
+}
+.the3services th{
+border: 0px;
+padding: 18px; 
+text-align:center;
+width: 33%;
+}
+
+.the3services td{
+border: 0px;
+padding: 18px; 
+text-align:center;
+}
+
+.the3services .btitles{
+font-size: large;
+}
+
+  
 
 /* Gallery CSS Styles */
 /*.gtable img {
@@ -197,7 +291,9 @@ th {
 .gtable {
   font-family: arial, sans-serif;
   border-collapse: collapse;
-  max-width: 100%;
+  width: 100%;
+  height: auto; 
+ 
 }
 
 
